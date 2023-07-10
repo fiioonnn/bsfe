@@ -24,6 +24,39 @@ class FieldSettings {
 	 * @returns {void}
 	 */
 	close() {}
+
+	createInputs(field, fieldType) {
+		let inputHTML = "";
+		let inputType = "";
+		let output = "";
+
+		Object.entries(fieldType).forEach(([name, value]) => {
+			if (value === "string") {
+				inputType = "string";
+				inputHTML = `<input type="text" name="${name}" value="${field[name]}">`;
+			}
+			if (value === "number") {
+				inputType = "number";
+				inputHTML = `<input type="number" name="${name}" value="${field[name]}">`;
+			}
+			if (value === "boolean") {
+				inputType = "boolean";
+				inputHTML = `<input type="checkbox" name="${name}" ${
+					field[name] ? "checked" : ""
+				}>`;
+			}
+
+			output += `
+				<li class="nav__item nav__item--input">
+					<label class="${inputType}">
+						<span>${name}</span>
+						${inputHTML}
+					</label>
+				</li>`;
+		});
+
+		return output;
+	}
 }
 
 export default new FieldSettings();
