@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="assets/css/main.min.css" />
+		<link rel="stylesheet" href="assets/fontawesome/css/all.min.css" />
+		<script src="assets/js/main.js" type="module" defer></script>
+		<title>Blockstudio Field Editor</title>
+	</head>
+	<body>
+		<div class="alerts" id="alerts"></div>
+		<div class="loader">
+			<img src="assets/img/loader.svg" alt="BSFE" />
+			<div class="loader__text">Loading please wait..</div>
+		</div>
+		<div class="container">
+			<div class="toolbar">
+				<div class="toolbar__head">
+					<img src="assets/img/logo-full-colored.svg" alt="BSFE" />
+				</div>
+				<nav class="nav">
+					<ul class="nav__list">
+						<!-- Add Field -->
+						<li class="nav__item nav__item--parent" data-for="addFields">
+							<i class="fa-solid fa-plus-square"></i> Add Field
+						</li>
+						<ul class="nav__list nav__list--sub" data-menu="addFields">
+							<li class="nav__item nav__item--return"></li>
+						</ul>
+						<!-- Settings -->
+						<li class="nav__item nav__item--parent" data-for="settings">
+							<i class="fa-solid fa-cog"></i> Settings
+						</li>
+						<ul class="nav__list nav__list--sub" data-menu="settings">
+							<li class="nav__item nav__item--return"></li>
+							<!-- Block Settings -->
+							<li class="nav__item nav__item--parent" data-for="blockSettings">
+								<i class="fa-solid fa-sliders"></i> Block Settings
+							</li>
+							<ul class="nav__list nav__list--sub" data-menu="blockSettings">
+								<li class="nav__item nav__item--return"></li>
+								<form id="blockSettings">
+									<li class="nav__item nav__item--input">
+										<label>
+											<span>Name</span>
+											<input type="text" name="name" />
+										</label>
+									</li>
+									<li class="nav__item nav__item--input">
+										<label>
+											<span>Title</span>
+											<input type="text" name="title" />
+										</label>
+									</li>
+									<li class="nav__item nav__item--input">
+										<label>
+											<span>Category</span>
+											<input type="text" name="category" />
+										</label>
+									</li>
+									<li class="nav__item nav__item--input">
+										<label>
+											<span>Icon</span>
+											<input type="text" name="icon" />
+										</label>
+									</li>
+									<li class="nav__item nav__item--input">
+										<label>
+											<span>Description</span>
+											<input type="text" name="description" />
+										</label>
+									</li>
+									<li class="nav__item nav__item--input">
+										<label>
+											<span>Keywords</span>
+											<input type="text" name="keywords" />
+										</label>
+									</li>
+									<li class="nav__item nav__item--input">
+										<label>
+											<span>Version</span>
+											<input type="text" name="version" />
+										</label>
+									</li>
+									<li class="nav__item nav__item--input">
+										<label>
+											<span>Textdomain</span>
+											<input type="text" name="textdomain" />
+										</label>
+									</li>
+								</form>
+							</ul>
+							<!-- Settings.. -->
+							<li class="nav__item nav__item--input">
+								<label class="boolean">
+									<span>
+										<i class="fa-solid fa-hashtag"></i>Hide Field IDs
+									</span>
+									<input type="checkbox" id="hideFieldIds" />
+								</label>
+							</li>
+							<li class="nav__item nav__item--input">
+								<label class="boolean">
+									<span>
+										<i class="fa-solid fa-eye-slash"></i>Hide Top-Bar
+									</span>
+									<input type="checkbox" id="hideTopBar" />
+								</label>
+							</li>
+							<li class="nav__item nav__item--input">
+								<label class="boolean">
+									<span>
+										<i class="fa-solid fa-close"></i>Auto close menu
+									</span>
+									<input type="checkbox" id="closeAfterFieldAdded" />
+								</label>
+							</li>
+						</ul>
+						<!-- History -->
+						<li class="nav__item nav__item--parent" data-for="history">
+							<i class="fa-solid fa-history"></i> History
+						</li>
+						<ul class="nav__list nav__list--sub" data-menu="history">
+							<li class="nav__item nav__item--return"></li>
+						</ul>
+						<!-- Field Properties -->
+						<li class="nav__item nav__item--divider" id="fieldSettingsId">
+							N/A
+						</li>
+						<form class="toolbar__field-settings" id="fieldSettings"></form>
+					</ul>
+				</nav>
+
+				<button class="button" id="saveBtn">Save</button>
+			</div>
+			<div class="editor">
+				<div class="editor__details">
+					<p class="editor__blockname" id="blockName">Blockname</p>
+				</div>
+				<div class="editor__inner">
+					<div class="fields" id="fields"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

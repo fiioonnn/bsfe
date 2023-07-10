@@ -1,0 +1,99 @@
+.fields {
+	display: flex;
+	flex-direction: column;
+	overflow-y: auto;
+	height: 100%;
+	gap: 10px;
+	position: relative;
+	&:empty {
+		&::before {
+			content: "Add a field in the toolbar.";
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: rgba(#ccc, 0.3);
+		}
+	}
+}
+
+.field {
+	cursor: pointer;
+
+	&__head {
+		background: $color_primary;
+		padding: 10px;
+		display: flex;
+		align-items: center;
+		gap: 5px;
+		color: #000;
+		opacity: 0.6;
+	}
+	&__type {
+		font-weight: 700;
+	}
+	&__id {
+		padding: 2px;
+		font-size: 10px;
+		&::before {
+			content: "#";
+		}
+	}
+	&__controls {
+		margin-left: auto;
+		button {
+			border: 0;
+			width: 25px;
+			height: 25px;
+			display: inline-grid;
+			place-items: center;
+			background: #000;
+			color: $color_primary;
+			cursor: pointer;
+
+			i {
+				pointer-events: none;
+			}
+			&:hover {
+				opacity: 0.8;
+			}
+			&:active {
+				scale: 0.9;
+			}
+		}
+	}
+
+	&__attributes {
+		padding-left: 10px;
+		border-left: 2px solid rgba($color_primary, 0.5);
+		overflow: hidden;
+		height: 0;
+		& > * {
+			margin-top: 10px;
+		}
+	}
+	&__add {
+		background: transparent;
+		border: 2px dashed $color_primary;
+		color: $color_primary;
+		width: 100%;
+		text-align: center;
+		padding: 5px;
+		cursor: pointer;
+		font-weight: 700;
+		opacity: 0.5;
+		&:hover {
+			opacity: 1;
+		}
+	}
+	&--selected {
+		& > .field__head {
+			opacity: 1;
+		}
+	}
+	&--expanded {
+		& > .field__attributes {
+			height: auto;
+		}
+	}
+}

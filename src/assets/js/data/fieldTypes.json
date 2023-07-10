@@ -1,0 +1,11 @@
+{
+	"text": {
+		"name": "string",
+		"label": "string"
+	},
+	"group": {
+		"name": "string",
+		"label": "string",
+		"attributes": []
+	}
+}

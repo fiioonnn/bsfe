@@ -1,0 +1,21 @@
+.editor {
+	flex: 1 1 calc(100% - 300px);
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	&__details {
+		background: #222;
+		padding: 20px;
+		text-align: center;
+		color: #fff;
+		font-weight: 700;
+	}
+	&__inner {
+		margin: 10px;
+		flex: 1;
+		border: 3px dashed rgba($color_primary, 0.3);
+		padding: 10px;
+		position: relative;
+		overflow-y: auto;
+	}
+}

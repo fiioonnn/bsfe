@@ -1,0 +1,14 @@
+.button {
+	background: $color_primary;
+	color: #000;
+	border: 0;
+	padding: 15px 20px;
+	font-weight: 700;
+	cursor: pointer;
+	&:hover {
+		opacity: 0.8;
+	}
+	&--disabled {
+		opacity: 0.5;
+	}
+}

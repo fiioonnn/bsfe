@@ -1,0 +1,15 @@
+<svg width="124" height="141" viewBox="-1 -1 129 142" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<style>
+		path {
+			<!-- animation: stroke 3s linear forwards,
+					   loader 4s linear infinite alternate; -->
+			animation: fill 3s linear forwards;
+		}
+		@keyframes fill {
+			to {
+				fill: #ffdd00;
+			}
+		}
+	</style>
+	<path d="M0 0H96.1348L103.101 42.2649L5.57303 14.3806L124 56.6455L110.067 141H0V0Z" fill="transparent" />
+</svg>

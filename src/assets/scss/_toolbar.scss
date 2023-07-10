@@ -1,0 +1,30 @@
+.toolbar {
+	background: #333;
+	display: flex;
+	flex-direction: column;
+	#fieldSettingsId {
+		opacity: 0;
+	}
+	&__head {
+		padding: 20px;
+		img {
+			display: block;
+			max-width: 200px;
+			margin: 0 auto;
+		}
+	}
+	&__field-settings {
+		height: 100%;
+		overflow-y: auto;
+		position: relative;
+		&:empty {
+			&::before {
+				content: "No field selected";
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+		}
+	}
+}
