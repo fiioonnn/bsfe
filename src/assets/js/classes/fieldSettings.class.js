@@ -16,46 +16,230 @@ class FieldSettings {
 		const field = Fields.find(fieldId);
 		const fieldType = Fields.types[field.type];
 
-		console.log(fieldType);
+		this.fieldSettings.innerHTML = this.createInputs(field, fieldType);
+		this.setTitle(fieldId, true);
+		this.registerInputs();
 	}
 
 	/**
 	 * Closes the fieldSettings.
 	 * @returns {void}
 	 */
-	close() {}
+	close() {
+		this.fieldSettings.innerHTML = "";
+		this.setTitle();
+		this.unregisterInputs();
+	}
 
-	createInputs(field, fieldType) {
-		let inputHTML = "";
-		let inputType = "";
-		let output = "";
+	/**
+	 * Sets the title of the fieldSettings.
+	 * @param {text} text
+	 * @param {show} show
+	 * @returns {void}
+	 */
+	setTitle(text = "N/A", show = false) {
+		this.fieldSettingsId.innerHTML = text;
+		this.fieldSettingsId.style.opacity = show ? "1" : "0";
+	}
 
-		Object.entries(fieldType).forEach(([name, value]) => {
-			if (value === "string") {
-				inputType = "string";
-				inputHTML = `<input type="text" name="${name}" value="${field[name]}">`;
-			}
-			if (value === "number") {
-				inputType = "number";
-				inputHTML = `<input type="number" name="${name}" value="${field[name]}">`;
-			}
-			if (value === "boolean") {
-				inputType = "boolean";
-				inputHTML = `<input type="checkbox" name="${name}" ${
-					field[name] ? "checked" : ""
-				}>`;
-			}
+	/**
+	 * Registers the input events.
+	 * This is used to save the field settings.
+	 * @returns {void}
+	 */
+	registerInputs() {
+		const field = Fields.find(this.fieldSettingsId.innerHTML);
+		const inputs = Array.from(
+			this.fieldSettings.querySelectorAll("input, select")
+		);
 
-			output += `
-				<li class="nav__item nav__item--input">
-					<label class="${inputType}">
-						<span>${name}</span>
-						${inputHTML}
-					</label>
-				</li>`;
+		inputs.forEach((input) => {
+			input.onchange = (e) => {
+				if (input.type === "checkbox") {
+					this.setValue(field, input.name, input.checked);
+				}
+
+				if (input.type === "number") {
+					this.setValue(field, input.name, parseInt(input.value));
+				}
+
+				if (input.type === "text") {
+					this.setValue(field, input.name, input.value);
+				}
+
+				if (input.type === "select-multiple") {
+					const options = Array.from(input.options);
+					const selected = options.filter((option) => option.selected);
+					const values = selected.map((option) => option.value);
+
+					return this.setValue(field, input.name, values);
+				}
+
+				if (input.type === "select-one") {
+					console.log(12312312313);
+					this.setValue(field, input.name, input.value);
+				}
+				// this.setValue(field, nameString, input.value, input.name);
+			};
 		});
+	}
+
+	/**
+	 * Unregisters the input events.
+	 * Prevents memory leaks.
+	 * @returns {void}
+	 */
+	unregisterInputs() {
+		const inputs = Array.from(
+			this.fieldSettings.querySelectorAll("input, select")
+		);
+
+		inputs.forEach((input) => {
+			input.onchange = null;
+		});
+	}
+
+	/**
+	 * Creates the fields based on the fieldType.
+	 * @param {field} field
+	 * @param {fieldType} fieldType
+	 * @returns {HTMLLIElement} output
+	 */
+	createInputs(field, fieldType) {
+		let output = "";
+		let multiSelects = ["headings"];
+		let ignore = ["fieldId", "options"];
+
+		const generate = (obj, path = "") => {
+			Object.entries(obj).forEach(([key, value]) => {
+				const inputName = path + key;
+				const inputValue = this.getValue(field, inputName, key);
+				let inputHTML = "";
+				let inputType = "";
+
+				if (ignore.includes(key)) return;
+
+				if (key === "attributes" && Array.isArray(value)) {
+					return;
+				}
+
+				if (value === "string") {
+					inputType = "string";
+					inputHTML = `<input type="text" name="${inputName}" value="${inputValue}">`;
+				}
+
+				if (value === "number") {
+					inputType = "number";
+					inputHTML = `<input type="number" name="${inputName}" value="${inputValue}">`;
+				}
+
+				if (value === "boolean") {
+					inputType = "boolean";
+					inputHTML = `<input type="checkbox" name="${inputName}" ${
+						inputValue ? "checked" : ""
+					}>`;
+				}
+				if (Array.isArray(value)) {
+					console.log(inputName, inputValue);
+					inputType = "select";
+					inputHTML = `<select name="${inputName}" ${
+						multiSelects.includes(key) ? "multiple" : ""
+					}>`;
+
+					if (Array.isArray(inputValue)) {
+						value.forEach((option) => {
+							console.log(option);
+							inputHTML += `<option value="${option}" ${
+								inputValue.includes(option.toString()) ? "selected" : ""
+							}>${option}</option>`;
+						});
+					} else {
+						value.forEach((option) => {
+							inputHTML += `<option value="${option}" ${
+								inputValue === option ? "selected" : ""
+							}>${option}</option>`;
+						});
+					}
+
+					inputHTML += `</select>`;
+				}
+
+				// Key has objects
+				if (typeof value === "object" && !Array.isArray(value)) {
+					let outputText = path + key;
+					outputText = outputText.replace(/:/g, " » ");
+
+					output += `<li class="nav__item nav__item--nested">${outputText}</li>`;
+					return generate(value, path + key + ":");
+				}
+
+				output += `
+					<li class="nav__item nav__item--input">
+						<label class="${inputType}">
+							<span>${key}</span>
+							${inputHTML}
+						</label>
+					</li>
+				`;
+			});
+		};
+
+		generate(fieldType);
 
 		return output;
+	}
+
+	setValue(field, nameString, value) {
+		const keys = nameString?.split(":");
+
+		// resolve the nameString to the correct object and set the value use Fields.update()
+		if (nameString?.trim() !== "") {
+			let result = field;
+
+			for (let i = 0; i < keys.length; i++) {
+				if (i === keys.length - 1) {
+					result[keys[i]] = value;
+				} else {
+					result = result[keys[i]];
+				}
+			}
+		} else {
+			field[nameString] = value;
+		}
+
+		console.log(JSON.stringify(field, null, 2));
+	}
+
+	getValue(field, query, key) {
+		let fieldKeys = query.split(":");
+		let result = field;
+
+		if (query.trim() !== "") {
+			for (let i = 0; i < fieldKeys.length; i++) {
+				if (i === fieldKeys.length - 1) {
+					return result[fieldKeys[i]];
+				} else {
+					result = result[fieldKeys[i]];
+				}
+			}
+		}
+
+		return result[key];
+	}
+
+	getKeys(field, nameString) {
+		const props = nameString?.split(":");
+
+		let result = field;
+
+		if (nameString?.trim() !== "") {
+			for (let prop of props) {
+				result = result[prop];
+			}
+		}
+
+		// Return the value for the giv
+		return Object.keys(result);
 	}
 }
 

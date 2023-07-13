@@ -41,6 +41,7 @@ class Toolbar {
 		this.fixFieldSettingsHeight();
 		this.addFieldTypes();
 		this.registerAddField();
+		this.hideMenu("addOptions");
 	}
 
 	addFieldTypes() {
@@ -148,14 +149,25 @@ class Toolbar {
 	 * @returns {void}
 	 */
 	closeMenu(menuId) {
-		const menu = this.select(`[data-menu="${menuId}"]`);
+		const menu = document.querySelector(`[data-menu="${menuId}"]`);
 
 		// Error handling
 		if (!menu) {
-			throw new Error(this.msg["TB_NAV_MENU_NOT_FOUND"]);
+			throw new Error(`Menu ${menuId} not found.`);
 		}
 
 		menu.classList.remove("nav__list--active");
+	}
+
+	hideMenu(menuId) {
+		const menu = document.querySelector(`[data-for="${menuId}"]`);
+
+		// Error handling
+		if (!menu) {
+			throw new Error(`Menu ${menuId} not found.`);
+		}
+
+		menu.classList.add("nav__item--hidden");
 	}
 
 	/**

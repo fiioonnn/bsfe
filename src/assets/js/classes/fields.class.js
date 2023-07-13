@@ -14,8 +14,8 @@ class Fields {
 				name: "string",
 				label: "string",
 				initialOpen: "boolean",
-				attributes: [],
 				test: ["1", "2", "3"],
+				attributes: [],
 			},
 			gradient: {
 				id: "string",
@@ -26,6 +26,7 @@ class Fields {
 				id: "string",
 				label: "string",
 				toolbar: {
+					title: "string",
 					tags: {
 						headings: [1, 2, 3, 4, 5, 6],
 					},
@@ -440,24 +441,24 @@ class Fields {
 
 	/**
 	 * Clears all properties of a field
-	 * @param {fieldId} id
+	 * @param {fieldId|object} id
 	 * @returns {field}
 	 */
 	clearProps(id) {
-		const field = this.find(id);
+		let field = null;
+
+		if (typeof id === "string") {
+			field = this.find(id);
+		} else {
+			field = id;
+		}
 
 		if (!field) {
 			return console.error(`Field '${id}' not found`);
 		}
 
 		for (let prop in field) {
-			if (
-				prop === "attributes" ||
-				prop === "options" ||
-				prop === "fieldId" ||
-				prop === "type"
-			)
-				continue;
+			if (prop === "fieldId" || prop === "type") continue;
 
 			if (field[prop] === "string") {
 				field[prop] = "";
@@ -475,12 +476,16 @@ class Fields {
 			}
 
 			if (Array.isArray(field[prop])) {
-				field[prop] = field[prop][0];
+				if (field[prop][0]) {
+					field[prop] = [field[prop][0]];
+				}
+				// // field[prop] = [];
+
 				continue;
 			}
 
 			if (typeof field[prop] === "object" && !Array.isArray(field[prop])) {
-				field[prop] = {};
+				this.clearProps(field[prop]);
 				continue;
 			}
 

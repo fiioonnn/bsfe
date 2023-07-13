@@ -127,5 +127,8 @@
 				content: ":";
 			}
 		}
+		&--hidden {
+			display: none;
+		}
 	}
 }
