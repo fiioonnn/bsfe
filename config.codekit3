@@ -17,23 +17,7 @@
       "oAP" : "\/.gitattributes",
       "oF" : 0
     },
-    "\/index.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/index.html",
-      "oF" : 0
-    },
-    "\/LICENSE" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/LICENSE",
-      "oF" : 0
-    },
-    "\/src\/assets\/css\/main.min.css" : {
+    "\/assets\/css\/main.min.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -41,11 +25,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/src\/assets\/css\/main.min-min.css",
+      "oAP" : "\/assets\/css\/main.min-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/src\/assets\/fontawesome\/css\/all.css" : {
+    "\/assets\/fontawesome\/css\/all.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -53,11 +37,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/src\/assets\/fontawesome\/css\/all-min.css",
+      "oAP" : "\/assets\/fontawesome\/css\/all-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/src\/assets\/fontawesome\/css\/all.min.css" : {
+    "\/assets\/fontawesome\/css\/all.min.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -65,11 +49,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/src\/assets\/fontawesome\/css\/all.min-min.css",
+      "oAP" : "\/assets\/fontawesome\/css\/all.min-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/src\/assets\/fontawesome\/css\/brands.css" : {
+    "\/assets\/fontawesome\/css\/brands.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -77,11 +61,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/src\/assets\/fontawesome\/css\/brands-min.css",
+      "oAP" : "\/assets\/fontawesome\/css\/brands-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/src\/assets\/fontawesome\/css\/brands.min.css" : {
+    "\/assets\/fontawesome\/css\/brands.min.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -89,11 +73,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/src\/assets\/fontawesome\/css\/brands.min-min.css",
+      "oAP" : "\/assets\/fontawesome\/css\/brands.min-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/src\/assets\/fontawesome\/css\/fontawesome.css" : {
+    "\/assets\/fontawesome\/css\/fontawesome.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -101,11 +85,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/src\/assets\/fontawesome\/css\/fontawesome-min.css",
+      "oAP" : "\/assets\/fontawesome\/css\/fontawesome-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/src\/assets\/fontawesome\/css\/fontawesome.min.css" : {
+    "\/assets\/fontawesome\/css\/fontawesome.min.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -113,11 +97,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/src\/assets\/fontawesome\/css\/fontawesome.min-min.css",
+      "oAP" : "\/assets\/fontawesome\/css\/fontawesome.min-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/src\/assets\/fontawesome\/css\/regular.css" : {
+    "\/assets\/fontawesome\/css\/regular.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -125,11 +109,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/src\/assets\/fontawesome\/css\/regular-min.css",
+      "oAP" : "\/assets\/fontawesome\/css\/regular-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/src\/assets\/fontawesome\/css\/regular.min.css" : {
+    "\/assets\/fontawesome\/css\/regular.min.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -137,11 +121,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/src\/assets\/fontawesome\/css\/regular.min-min.css",
+      "oAP" : "\/assets\/fontawesome\/css\/regular.min-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/src\/assets\/fontawesome\/css\/solid.css" : {
+    "\/assets\/fontawesome\/css\/solid.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -149,11 +133,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/src\/assets\/fontawesome\/css\/solid-min.css",
+      "oAP" : "\/assets\/fontawesome\/css\/solid-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/src\/assets\/fontawesome\/css\/solid.min.css" : {
+    "\/assets\/fontawesome\/css\/solid.min.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -161,11 +145,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/src\/assets\/fontawesome\/css\/solid.min-min.css",
+      "oAP" : "\/assets\/fontawesome\/css\/solid.min-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/src\/assets\/fontawesome\/css\/svg-with-js.css" : {
+    "\/assets\/fontawesome\/css\/svg-with-js.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -173,11 +157,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/src\/assets\/fontawesome\/css\/svg-with-js-min.css",
+      "oAP" : "\/assets\/fontawesome\/css\/svg-with-js-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/src\/assets\/fontawesome\/css\/svg-with-js.min.css" : {
+    "\/assets\/fontawesome\/css\/svg-with-js.min.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -185,11 +169,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/src\/assets\/fontawesome\/css\/svg-with-js.min-min.css",
+      "oAP" : "\/assets\/fontawesome\/css\/svg-with-js.min-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/src\/assets\/fontawesome\/css\/v4-font-face.css" : {
+    "\/assets\/fontawesome\/css\/v4-font-face.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -197,11 +181,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/src\/assets\/fontawesome\/css\/v4-font-face-min.css",
+      "oAP" : "\/assets\/fontawesome\/css\/v4-font-face-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/src\/assets\/fontawesome\/css\/v4-font-face.min.css" : {
+    "\/assets\/fontawesome\/css\/v4-font-face.min.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -209,11 +193,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/src\/assets\/fontawesome\/css\/v4-font-face.min-min.css",
+      "oAP" : "\/assets\/fontawesome\/css\/v4-font-face.min-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/src\/assets\/fontawesome\/css\/v4-shims.css" : {
+    "\/assets\/fontawesome\/css\/v4-shims.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -221,11 +205,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/src\/assets\/fontawesome\/css\/v4-shims-min.css",
+      "oAP" : "\/assets\/fontawesome\/css\/v4-shims-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/src\/assets\/fontawesome\/css\/v4-shims.min.css" : {
+    "\/assets\/fontawesome\/css\/v4-shims.min.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -233,11 +217,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/src\/assets\/fontawesome\/css\/v4-shims.min-min.css",
+      "oAP" : "\/assets\/fontawesome\/css\/v4-shims.min-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/src\/assets\/fontawesome\/css\/v5-font-face.css" : {
+    "\/assets\/fontawesome\/css\/v5-font-face.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -245,11 +229,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/src\/assets\/fontawesome\/css\/v5-font-face-min.css",
+      "oAP" : "\/assets\/fontawesome\/css\/v5-font-face-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/src\/assets\/fontawesome\/css\/v5-font-face.min.css" : {
+    "\/assets\/fontawesome\/css\/v5-font-face.min.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -257,265 +241,443 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/src\/assets\/fontawesome\/css\/v5-font-face.min-min.css",
+      "oAP" : "\/assets\/fontawesome\/css\/v5-font-face.min-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/src\/assets\/fontawesome\/webfonts\/fa-brands-400.ttf" : {
+    "\/assets\/fontawesome\/webfonts\/fa-brands-400.ttf" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/src\/assets\/fontawesome\/webfonts\/fa-brands-400.ttf",
+      "oAP" : "\/assets\/fontawesome\/webfonts\/fa-brands-400.ttf",
       "oF" : 0
     },
-    "\/src\/assets\/fontawesome\/webfonts\/fa-brands-400.woff2" : {
+    "\/assets\/fontawesome\/webfonts\/fa-brands-400.woff2" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/src\/assets\/fontawesome\/webfonts\/fa-brands-400.woff2",
+      "oAP" : "\/assets\/fontawesome\/webfonts\/fa-brands-400.woff2",
       "oF" : 0
     },
-    "\/src\/assets\/fontawesome\/webfonts\/fa-regular-400.ttf" : {
+    "\/assets\/fontawesome\/webfonts\/fa-regular-400.ttf" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/src\/assets\/fontawesome\/webfonts\/fa-regular-400.ttf",
+      "oAP" : "\/assets\/fontawesome\/webfonts\/fa-regular-400.ttf",
       "oF" : 0
     },
-    "\/src\/assets\/fontawesome\/webfonts\/fa-regular-400.woff2" : {
+    "\/assets\/fontawesome\/webfonts\/fa-regular-400.woff2" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/src\/assets\/fontawesome\/webfonts\/fa-regular-400.woff2",
+      "oAP" : "\/assets\/fontawesome\/webfonts\/fa-regular-400.woff2",
       "oF" : 0
     },
-    "\/src\/assets\/fontawesome\/webfonts\/fa-solid-900.ttf" : {
+    "\/assets\/fontawesome\/webfonts\/fa-solid-900.ttf" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/src\/assets\/fontawesome\/webfonts\/fa-solid-900.ttf",
+      "oAP" : "\/assets\/fontawesome\/webfonts\/fa-solid-900.ttf",
       "oF" : 0
     },
-    "\/src\/assets\/fontawesome\/webfonts\/fa-solid-900.woff2" : {
+    "\/assets\/fontawesome\/webfonts\/fa-solid-900.woff2" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/src\/assets\/fontawesome\/webfonts\/fa-solid-900.woff2",
+      "oAP" : "\/assets\/fontawesome\/webfonts\/fa-solid-900.woff2",
       "oF" : 0
     },
-    "\/src\/assets\/fontawesome\/webfonts\/fa-v4compatibility.ttf" : {
+    "\/assets\/fontawesome\/webfonts\/fa-v4compatibility.ttf" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/src\/assets\/fontawesome\/webfonts\/fa-v4compatibility.ttf",
+      "oAP" : "\/assets\/fontawesome\/webfonts\/fa-v4compatibility.ttf",
       "oF" : 0
     },
-    "\/src\/assets\/fontawesome\/webfonts\/fa-v4compatibility.woff2" : {
+    "\/assets\/fontawesome\/webfonts\/fa-v4compatibility.woff2" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/src\/assets\/fontawesome\/webfonts\/fa-v4compatibility.woff2",
+      "oAP" : "\/assets\/fontawesome\/webfonts\/fa-v4compatibility.woff2",
       "oF" : 0
     },
-    "\/src\/assets\/fonts\/montserrat-v25-latin-100.woff2" : {
+    "\/assets\/fonts\/montserrat-v25-latin-100.woff2" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/src\/assets\/fonts\/montserrat-v25-latin-100.woff2",
+      "oAP" : "\/assets\/fonts\/montserrat-v25-latin-100.woff2",
       "oF" : 0
     },
-    "\/src\/assets\/fonts\/montserrat-v25-latin-100italic.woff2" : {
+    "\/assets\/fonts\/montserrat-v25-latin-100italic.woff2" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/src\/assets\/fonts\/montserrat-v25-latin-100italic.woff2",
+      "oAP" : "\/assets\/fonts\/montserrat-v25-latin-100italic.woff2",
       "oF" : 0
     },
-    "\/src\/assets\/fonts\/montserrat-v25-latin-200.woff2" : {
+    "\/assets\/fonts\/montserrat-v25-latin-200.woff2" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/src\/assets\/fonts\/montserrat-v25-latin-200.woff2",
+      "oAP" : "\/assets\/fonts\/montserrat-v25-latin-200.woff2",
       "oF" : 0
     },
-    "\/src\/assets\/fonts\/montserrat-v25-latin-200italic.woff2" : {
+    "\/assets\/fonts\/montserrat-v25-latin-200italic.woff2" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/src\/assets\/fonts\/montserrat-v25-latin-200italic.woff2",
+      "oAP" : "\/assets\/fonts\/montserrat-v25-latin-200italic.woff2",
       "oF" : 0
     },
-    "\/src\/assets\/fonts\/montserrat-v25-latin-300.woff2" : {
+    "\/assets\/fonts\/montserrat-v25-latin-300.woff2" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/src\/assets\/fonts\/montserrat-v25-latin-300.woff2",
+      "oAP" : "\/assets\/fonts\/montserrat-v25-latin-300.woff2",
       "oF" : 0
     },
-    "\/src\/assets\/fonts\/montserrat-v25-latin-300italic.woff2" : {
+    "\/assets\/fonts\/montserrat-v25-latin-300italic.woff2" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/src\/assets\/fonts\/montserrat-v25-latin-300italic.woff2",
+      "oAP" : "\/assets\/fonts\/montserrat-v25-latin-300italic.woff2",
       "oF" : 0
     },
-    "\/src\/assets\/fonts\/montserrat-v25-latin-500.woff2" : {
+    "\/assets\/fonts\/montserrat-v25-latin-500.woff2" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/src\/assets\/fonts\/montserrat-v25-latin-500.woff2",
+      "oAP" : "\/assets\/fonts\/montserrat-v25-latin-500.woff2",
       "oF" : 0
     },
-    "\/src\/assets\/fonts\/montserrat-v25-latin-500italic.woff2" : {
+    "\/assets\/fonts\/montserrat-v25-latin-500italic.woff2" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/src\/assets\/fonts\/montserrat-v25-latin-500italic.woff2",
+      "oAP" : "\/assets\/fonts\/montserrat-v25-latin-500italic.woff2",
       "oF" : 0
     },
-    "\/src\/assets\/fonts\/montserrat-v25-latin-600.woff2" : {
+    "\/assets\/fonts\/montserrat-v25-latin-600.woff2" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/src\/assets\/fonts\/montserrat-v25-latin-600.woff2",
+      "oAP" : "\/assets\/fonts\/montserrat-v25-latin-600.woff2",
       "oF" : 0
     },
-    "\/src\/assets\/fonts\/montserrat-v25-latin-600italic.woff2" : {
+    "\/assets\/fonts\/montserrat-v25-latin-600italic.woff2" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/src\/assets\/fonts\/montserrat-v25-latin-600italic.woff2",
+      "oAP" : "\/assets\/fonts\/montserrat-v25-latin-600italic.woff2",
       "oF" : 0
     },
-    "\/src\/assets\/fonts\/montserrat-v25-latin-700.woff2" : {
+    "\/assets\/fonts\/montserrat-v25-latin-700.woff2" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/src\/assets\/fonts\/montserrat-v25-latin-700.woff2",
+      "oAP" : "\/assets\/fonts\/montserrat-v25-latin-700.woff2",
       "oF" : 0
     },
-    "\/src\/assets\/fonts\/montserrat-v25-latin-700italic.woff2" : {
+    "\/assets\/fonts\/montserrat-v25-latin-700italic.woff2" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/src\/assets\/fonts\/montserrat-v25-latin-700italic.woff2",
+      "oAP" : "\/assets\/fonts\/montserrat-v25-latin-700italic.woff2",
       "oF" : 0
     },
-    "\/src\/assets\/fonts\/montserrat-v25-latin-800.woff2" : {
+    "\/assets\/fonts\/montserrat-v25-latin-800.woff2" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/src\/assets\/fonts\/montserrat-v25-latin-800.woff2",
+      "oAP" : "\/assets\/fonts\/montserrat-v25-latin-800.woff2",
       "oF" : 0
     },
-    "\/src\/assets\/fonts\/montserrat-v25-latin-800italic.woff2" : {
+    "\/assets\/fonts\/montserrat-v25-latin-800italic.woff2" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/src\/assets\/fonts\/montserrat-v25-latin-800italic.woff2",
+      "oAP" : "\/assets\/fonts\/montserrat-v25-latin-800italic.woff2",
       "oF" : 0
     },
-    "\/src\/assets\/fonts\/montserrat-v25-latin-900.woff2" : {
+    "\/assets\/fonts\/montserrat-v25-latin-900.woff2" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/src\/assets\/fonts\/montserrat-v25-latin-900.woff2",
+      "oAP" : "\/assets\/fonts\/montserrat-v25-latin-900.woff2",
       "oF" : 0
     },
-    "\/src\/assets\/fonts\/montserrat-v25-latin-900italic.woff2" : {
+    "\/assets\/fonts\/montserrat-v25-latin-900italic.woff2" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/src\/assets\/fonts\/montserrat-v25-latin-900italic.woff2",
+      "oAP" : "\/assets\/fonts\/montserrat-v25-latin-900italic.woff2",
       "oF" : 0
     },
-    "\/src\/assets\/fonts\/montserrat-v25-latin-italic.woff2" : {
+    "\/assets\/fonts\/montserrat-v25-latin-italic.woff2" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/src\/assets\/fonts\/montserrat-v25-latin-italic.woff2",
+      "oAP" : "\/assets\/fonts\/montserrat-v25-latin-italic.woff2",
       "oF" : 0
     },
-    "\/src\/assets\/fonts\/montserrat-v25-latin-regular.woff2" : {
+    "\/assets\/fonts\/montserrat-v25-latin-regular.woff2" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/src\/assets\/fonts\/montserrat-v25-latin-regular.woff2",
+      "oAP" : "\/assets\/fonts\/montserrat-v25-latin-regular.woff2",
       "oF" : 0
     },
-    "\/src\/assets\/img\/loader.svg" : {
+    "\/assets\/img\/loader.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/src\/assets\/img\/loader.svg",
+      "oAP" : "\/assets\/img\/loader.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/src\/assets\/img\/logo-full-colored.svg" : {
+    "\/assets\/img\/logo-full-colored.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/src\/assets\/img\/logo-full-colored.svg",
+      "oAP" : "\/assets\/img\/logo-full-colored.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/src\/assets\/img\/logo-full.svg" : {
+    "\/assets\/img\/logo-full.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/src\/assets\/img\/logo-full.svg",
+      "oAP" : "\/assets\/img\/logo-full.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/src\/assets\/img\/logo-single.svg" : {
+    "\/assets\/img\/logo-single.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/src\/assets\/img\/logo-single.svg",
+      "oAP" : "\/assets\/img\/logo-single.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/src\/assets\/js" : {
-      "ft" : 65536,
+    "\/assets\/js\/classes\/block.class.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
       "oA" : 1,
-      "oAP" : "\/src\/assets\/js",
-      "oF" : 0
+      "oAP" : "\/assets\/js\/classes\/block.class-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
     },
-    "\/src\/assets\/scss\/_base.scss" : {
+    "\/assets\/js\/classes\/editor.class.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/assets\/js\/classes\/editor.class-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/assets\/js\/classes\/fields.class.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/assets\/js\/classes\/fields.class-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/assets\/js\/classes\/fieldSettings.class.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/assets\/js\/classes\/fieldSettings.class-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/assets\/js\/classes\/toolbar.class.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/assets\/js\/classes\/toolbar.class-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/assets\/js\/data\/fieldTypes.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/assets\/js\/data\/fieldTypes-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/assets\/js\/lib\/jquery.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/assets\/js\/lib\/jquery-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/assets\/js\/main.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/assets\/js\/main-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/assets\/js\/modules\/alerts.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/assets\/js\/modules\/alerts-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/assets\/js\/modules\/app.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/assets\/js\/modules\/app-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/assets\/js\/modules\/core.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/assets\/js\/modules\/core-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/assets\/js\/modules\/editor.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/assets\/js\/modules\/editor-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/assets\/js\/modules\/history.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/assets\/js\/modules\/history-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/assets\/js\/modules\/loader.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/assets\/js\/modules\/loader-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/assets\/js\/modules\/settings.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/assets\/js\/modules\/settings-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/assets\/js\/modules\/utils.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/assets\/js\/modules\/utils-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/assets\/js\/utils\/utils.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/assets\/js\/utils\/utils-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/assets\/scss\/_base.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -524,13 +686,13 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/src\/assets\/scss\/_base.css",
+      "oAP" : "\/assets\/scss\/_base.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/src\/assets\/scss\/_button.scss" : {
+    "\/assets\/scss\/_button.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -539,13 +701,13 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/src\/assets\/scss\/_button.css",
+      "oAP" : "\/assets\/scss\/_button.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/src\/assets\/scss\/_editor.scss" : {
+    "\/assets\/scss\/_editor.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -554,13 +716,13 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/src\/assets\/scss\/_editor.css",
+      "oAP" : "\/assets\/scss\/_editor.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/src\/assets\/scss\/_fields.scss" : {
+    "\/assets\/scss\/_fields.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -569,13 +731,13 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/src\/assets\/scss\/_fields.css",
+      "oAP" : "\/assets\/scss\/_fields.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/src\/assets\/scss\/_fonts.scss" : {
+    "\/assets\/scss\/_fonts.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -584,13 +746,13 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/src\/assets\/scss\/_fonts.css",
+      "oAP" : "\/assets\/scss\/_fonts.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/src\/assets\/scss\/_loader.scss" : {
+    "\/assets\/scss\/_loader.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -599,13 +761,13 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/src\/assets\/scss\/_loader.css",
+      "oAP" : "\/assets\/scss\/_loader.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/src\/assets\/scss\/_nav.scss" : {
+    "\/assets\/scss\/_nav.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -614,13 +776,13 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/src\/assets\/scss\/_nav.css",
+      "oAP" : "\/assets\/scss\/_nav.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/src\/assets\/scss\/_reset.scss" : {
+    "\/assets\/scss\/_reset.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -629,13 +791,13 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/src\/assets\/scss\/_reset.css",
+      "oAP" : "\/assets\/scss\/_reset.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/src\/assets\/scss\/_toolbar.scss" : {
+    "\/assets\/scss\/_toolbar.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -644,13 +806,13 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/src\/assets\/scss\/_toolbar.css",
+      "oAP" : "\/assets\/scss\/_toolbar.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/src\/assets\/scss\/_variables.scss" : {
+    "\/assets\/scss\/_variables.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -659,13 +821,13 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/src\/assets\/scss\/_variables.css",
+      "oAP" : "\/assets\/scss\/_variables.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/src\/assets\/scss\/alerts.scss" : {
+    "\/assets\/scss\/alerts.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -674,13 +836,13 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/src\/assets\/scss\/alerts.css",
+      "oAP" : "\/assets\/scss\/alerts.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/src\/assets\/scss\/main.scss" : {
+    "\/assets\/scss\/main.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
@@ -695,12 +857,20 @@
       "pg" : 0,
       "sct" : 1
     },
-    "\/src\/index.html" : {
+    "\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/src\/index.html",
+      "oAP" : "\/index.html",
+      "oF" : 0
+    },
+    "\/LICENSE" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/LICENSE",
       "oF" : 0
     }
   },

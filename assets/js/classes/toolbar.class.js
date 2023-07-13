@@ -41,7 +41,6 @@ class Toolbar {
 		this.fixFieldSettingsHeight();
 		this.addFieldTypes();
 		this.registerAddField();
-		this.hideMenu("addOptions");
 	}
 
 	addFieldTypes() {
@@ -167,7 +166,7 @@ class Toolbar {
 			throw new Error(`Menu ${menuId} not found.`);
 		}
 
-		menu.classList.add("nav__item--hidden");
+		menu.classList.add("nav__list--hidden");
 	}
 
 	/**

@@ -1,68 +1,31 @@
 class Fields {
 	constructor() {
 		this.types = {
-			test: {
-				name: "string",
-				subt: ["1", "2", "3"],
-			},
-			text: {
-				name: "string",
-				label: "string",
-				options: [],
-			},
-			group: {
-				name: "string",
-				label: "string",
-				initialOpen: "boolean",
-				test: ["1", "2", "3"],
-				attributes: [],
-			},
-			gradient: {
+			select: {
 				id: "string",
 				label: "string",
 				options: [],
 			},
-			wysiwyg: {
-				id: "string",
+			selectOption: {
+				value: "string",
 				label: "string",
-				toolbar: {
-					title: "string",
-					tags: {
-						headings: [1, 2, 3, 4, 5, 6],
-					},
-					formats: {
-						bold: "boolean",
-						italic: "boolean",
-						underline: "boolean",
-						strikethrough: "boolean",
-						code: "boolean",
-						orderedList: "boolean",
-						unorderedList: "boolean",
-						link: {
-							opensInNewTab: "boolean",
-							attributes: {
-								rel: ["nofollow", "follow"],
-							},
-						},
-					},
-				},
 			},
-			repeater: {
+			token: {
 				id: "string",
 				label: "string",
-				textMinimized: {
-					id: "string",
-					fallback: "string",
-					prefix: "string",
-					suffix: "string",
-					textMinimized: {
-						id: "string",
-						fallback: "string",
-						prefix: "string",
-						suffix: "string",
-					},
-				},
-				attributes: [],
+				maxLength: "number",
+				placeholder: "string",
+				returnFormat: ["value", "label", "both"],
+				options: [],
+			},
+			tokenOption: {
+				value: "string",
+			},
+			files: {
+				id: "string",
+				label: "string",
+				multiple: "boolean",
+				default: "number",
 			},
 		};
 		this.fields = [];
@@ -73,6 +36,8 @@ class Fields {
 			gradient: "fa-solid fa-fill",
 			wysiwyg: "fa-solid fa-edit",
 			repeater: "fa-solid fa-repeat",
+			select: "fa-solid fa-bars",
+			selectOption: "fa-solid fa-list",
 		};
 
 		this.init();
