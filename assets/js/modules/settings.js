@@ -46,6 +46,7 @@ class Settings {
 const settings = new Settings();
 
 const functions = {
+	expandByDefault: () => {},
 	hideFieldIds: () => {
 		if (settings.get("hideFieldIds")) {
 			$(".field__id").hide();

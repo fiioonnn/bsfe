@@ -76,7 +76,6 @@ class FieldSettings {
 				}
 
 				if (input.type === "select-one") {
-					console.log(12312312313);
 					this.setValue(field, input.name, input.value);
 				}
 				// this.setValue(field, nameString, input.value, input.name);
@@ -107,7 +106,7 @@ class FieldSettings {
 	 */
 	createInputs(field, fieldType) {
 		let output = "";
-		let multiSelects = ["headings"];
+		let multiSelects = ["headings", "allowedTypes"];
 		let ignore = ["fieldId", "options"];
 
 		const generate = (obj, path = "") => {
@@ -140,11 +139,15 @@ class FieldSettings {
 					}>`;
 				}
 				if (Array.isArray(value)) {
-					console.log(inputName, inputValue);
-					inputType = "select";
 					inputHTML = `<select name="${inputName}" ${
 						multiSelects.includes(key) ? "multiple" : ""
 					}>`;
+
+					if (multiSelects.includes(key)) {
+						inputType = "select select--multiple";
+					} else {
+						inputType = "select";
+					}
 
 					if (Array.isArray(inputValue)) {
 						value.forEach((option) => {

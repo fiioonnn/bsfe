@@ -10,8 +10,6 @@ class Toolbar {
 		this.fieldSettings = document.querySelector("#fieldSettings");
 		this.addFieldsMenu = document.querySelector('[data-menu="addFields"]');
 		this.addFieldsContext = null;
-
-		this.initialize();
 	}
 
 	/**
@@ -35,18 +33,42 @@ class Toolbar {
 	/**
 	 * Initialize the toolbar
 	 */
-	initialize() {
+	init() {
 		this.registerMenus();
 		this.fixZIndex();
 		this.fixFieldSettingsHeight();
-		this.addFieldTypes();
-		this.registerAddField();
 	}
 
-	addFieldTypes() {
+	clearFieldTypes() {
+		const returnItem = this.addFieldsMenu.querySelector(".nav__item--return");
+		const items = this.addFieldsMenu.querySelectorAll(".nav__item");
+
+		items.forEach((item) => {
+			if (item === returnItem) return;
+			item.remove();
+		});
+	}
+
+	addFieldTypes(fieldType = null) {
 		if (!this.addFieldsMenu) return;
 
+		this.clearFieldTypes();
+
 		Object.entries(Fields.types).forEach(([key, value]) => {
+			// On normal add remove options
+			if (!fieldType && key.includes("Option")) return;
+			if (fieldType) {
+				if (Fields.types[fieldType]?.attributes && key.includes("Option"))
+					return;
+
+				if (Fields.types[fieldType]?.options && !key.includes(fieldType))
+					return;
+
+				if (Fields.types[fieldType]?.options && key === fieldType) return;
+
+				if (Fields.types[fieldType]?.attributes && key === "group") return;
+			}
+			//----
 			const item = document.createElement("li");
 			item.classList.add("nav__item");
 			item.setAttribute("data-field-type", key);
@@ -60,6 +82,8 @@ class Toolbar {
 
 			this.addFieldsMenu.appendChild(item);
 		});
+
+		this.registerAddField();
 	}
 
 	/**
@@ -88,6 +112,7 @@ class Toolbar {
 
 			parent.onclick = (e) => {
 				submenu.classList.add("nav__list--active");
+				this.addFieldTypes();
 			};
 		});
 	}
@@ -210,6 +235,9 @@ class Toolbar {
 	 * @returns {void}
 	 */
 	addFields(fieldId) {
+		const field = Fields.find(fieldId);
+		this.clearFieldTypes();
+		this.addFieldTypes(field.type);
 		this.set("addFieldsContext", fieldId);
 		this.closeAllMenus();
 		this.openMenu("addFields");

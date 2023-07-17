@@ -1,0 +1,162 @@
+{
+	"fieldTypes": {
+		"checkbox": {
+			"id": "string",
+			"key": "string",
+			"label": "string",
+			"help": "string",
+			"switch": "boolean",
+			"default": "boolean",
+			"returnFormat": ["value", "label", "both"],
+			"options": []
+		},
+		"checkboxOption": {
+			"value": "string",
+			"label": "string"
+		},
+		"color": {
+			"id": "string",
+			"key": "string",
+			"label": "string",
+			"help": "string",
+			"switch": "boolean",
+			"clearable": "boolean",
+			"disableCustomColors": "boolean",
+			"options": []
+		},
+		"colorOption": {
+			"value": "string",
+			"label": "string"
+		},
+		"date": {
+			"id": "string",
+			"key": "string",
+			"label": "string",
+			"help": "string",
+			"switch": "boolean",
+			"startOfWeek": "number"
+		},
+		"datetime": {
+			"id": "string",
+			"key": "string",
+			"label": "string",
+			"help": "string",
+			"switch": "boolean",
+			"is12Hour": "boolean"
+		},
+		"files": {
+			"id": "string",
+			"key": "string",
+			"label": "string",
+			"help": "string",
+			"switch": "boolean",
+			"multiple": "boolean",
+			"addToGallery": "boolean",
+			"allowedTypes": [
+				"audio/mpeg",
+				"audio/wav",
+				"image/jpeg",
+				"image/png",
+				"video/mp4",
+				"video/quicktime",
+				"video/x-msvideo",
+				"video/x-ms-wmv",
+				"image",
+				"audio",
+				"video",
+				"text"
+			],
+			"gallery": "boolean",
+			"max": "number",
+			"min": "number",
+			"size": "boolean",
+			"textMediaButton": "string",
+			"title": "string",
+			"returnFormat": ["object", "id", "url"],
+			"returnSize": "string",
+			"default": "number"
+		},
+		"gradient": {
+			"id": "string",
+			"key": "string",
+			"label": "string",
+			"help": "string",
+			"switch": "boolean",
+			"clearable": "boolean",
+			"disableCustomGradients": "boolean",
+			"options": []
+		},
+		"gradientOption": {
+			"name": "string",
+			"value": "string",
+			"slug": "string"
+		},
+		"group": {
+			"id": "string",
+			"key": "string",
+			"label": "string",
+			"title": "string",
+			"help": "string",
+			"switch": "boolean",
+			"opened": "boolean",
+			"initialOpen": "boolean",
+			"scrollAfterOpen": "boolean",
+			"class": "string",
+			"attributes": []
+		},
+		"text": {
+			"id": "string",
+			"label": "string",
+			"title": "string",
+			"help": "string",
+			"switch": "boolean",
+			"default": "string",
+			"min": "number",
+			"max": "number"
+		},
+		"wysiwyg": {
+			"id": "string",
+			"label": "string",
+			"title": "string",
+			"help": "string",
+			"switch": "boolean",
+			"toolbar": {
+				"tags": {
+					"headings": [1, 2, 3, 4, 5, 6]
+				},
+				"formats": {
+					"bold": "boolean",
+					"italic": "boolean",
+					"underline": "boolean",
+					"strikethrough": "boolean",
+					"code": "boolean",
+					"orderedList": "boolean",
+					"unorderedList": "boolean",
+					"link": {
+						"opensInNewTab": "boolean",
+						"attributes": {
+							"rel": ["nofollow", "follow"]
+						}
+					}
+				}
+			}
+		}
+	},
+	"fieldIcons": {
+		"text": "fa-solid fa-font",
+		"group": "fa-solid fa-object-group",
+		"gradient": "fa-solid fa-fill",
+		"gradientOption": "fa-solid fa-fill",
+		"files": "fa-solid fa-file",
+		"wysiwyg": "fa-solid fa-edit",
+		"repeater": "fa-solid fa-repeat",
+		"select": "fa-solid fa-bars",
+		"selectOption": "fa-solid fa-list",
+		"checkbox": "fa-solid fa-check-square",
+		"checkboxOption": "fa-solid fa-check-square",
+		"date": "fa-solid fa-calendar",
+		"color": "fa-solid fa-fill",
+		"colorOption": "fa-solid fa-fill",
+		"datetime": "fa-solid fa-clock"
+	}
+}

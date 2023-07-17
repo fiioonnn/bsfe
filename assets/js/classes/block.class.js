@@ -3,6 +3,7 @@ import Fields from "./fields.class.js";
 //Todo: Finish the Block class.
 //Todo: build popup to copy or downloaad finished block.json
 //Todo: Import blocks and translate them in the editor.
+// Todo: do net edit the real field, make a copy and edit+return that.
 
 class Block {
 	constructor() {
@@ -30,20 +31,69 @@ class Block {
 		this.registerBlockSettings();
 	}
 
-	cleanup() {
-		// Fields.each((field) => {
-		// 	delete field.fieldId;
-		// });
+	generate() {
+		const fields = JSON.parse(JSON.stringify(Fields.fields));
+
+		Fields.each((field) => {
+			// Remove the fieldId from the field
+			delete field.fieldId;
+			// Fix for the token field
+			if (field.options && field.type === "token") {
+				field.options = field.options.map((option) => option.value);
+				return;
+			}
+
+			// Fix for checkbox
+			if (field.type === "checkboxOption") {
+				delete field.type;
+			}
+
+			if (field?.min === 0) {
+				delete field.min;
+			}
+
+			if (field?.max === 0) {
+				delete field.max;
+			}
+
+			if (field?.opened === false) {
+				delete field.opened;
+			}
+
+			Object.entries(field).forEach(([key, value]) => {
+				if (value === "") {
+					delete field[key];
+				}
+			});
+		}, fields);
+
+		this.json.blockstudio.attributes = fields;
+		return JSON.stringify(this.json, null, 4);
 	}
 
-	show() {
-		this.cleanup();
-		this.prepare();
-		console.log(JSON.stringify(this.json, null, 4));
-	}
+	generateIndex() {
+		let fields = ``;
+		Fields.each((field) => {
+			const parent = Fields.findParent(field.id);
+			if (parent) {
+				fields += `${parent.id}_${field.id} `;
+				return;
+			}
+			fields += `${field.id || field.name} `;
+		});
+		const content = `
+			<?php
+				// Blockstudio variables
+				// text_oyadn7ans » Text
+				// text_oyadn7ans » Text
+				${fields}
+			?>
+			<div class="blockname">
 
-	prepare() {
-		this.json.blockstudio.attributes = Fields.fields;
+			</div>
+		`;
+
+		return content;
 	}
 
 	loadBlockSettings() {

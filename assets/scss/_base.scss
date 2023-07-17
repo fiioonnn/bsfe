@@ -48,9 +48,16 @@ input {
 	&:focus {
 		outline: none;
 		color: #fff;
+		box-shadow: inset 0 0 0 2px $color_primary;
 	}
 	&::placeholder {
 		text-transform: capitalize;
+	}
+}
+
+[contenteditable="true"] {
+	&:focus {
+		outline: none;
 	}
 }
 
@@ -108,16 +115,25 @@ label.select {
 		margin-bottom: 5px;
 		display: block;
 	}
-	select:not([multiple]) {
+	&::after {
+		content: "▼";
+		color: $color_primary;
+		position: absolute;
+		bottom: 13px;
+		right: 10px;
+		font-size: 10px;
+		pointer-events: none;
+	}
+	&--multiple {
 		&::after {
-			content: "▼";
-			color: $color_primary;
-			position: absolute;
-			bottom: 13px;
-			right: 10px;
-			font-size: 10px;
-			pointer-events: none;
+			display: none;
 		}
+	}
+}
+
+p {
+	a {
+		color: $color_primary;
 	}
 }
 
@@ -130,8 +146,4 @@ select {
 	position: relative;
 	// hide arrow
 	appearance: none;
-
-	&::after {
-		content: "asd";
-	}
 }

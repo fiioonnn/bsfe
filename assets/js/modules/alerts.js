@@ -13,7 +13,7 @@ class Alert {
 		const alertMessage = props.message || null;
 		const alertType = props.type || "info";
 		const alertIcon = this.types[alertType] || this.types.info;
-		const alertDuration = props.duration || 1000;
+		const alertDuration = props.duration || 1500;
 
 		const alert = document.createElement("div");
 

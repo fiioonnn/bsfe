@@ -116,6 +116,14 @@
 									<input type="checkbox" id="closeAfterFieldAdded" />
 								</label>
 							</li>
+							<li class="nav__item nav__item--input">
+								<label class="boolean">
+									<span>
+										<i class="fa-solid fa-expand"></i>Expand Fields by default
+									</span>
+									<input type="checkbox" id="expandByDefault" />
+								</label>
+							</li>
 						</ul>
 						<!-- History -->
 						<li class="nav__item nav__item--parent" data-for="history">
@@ -124,6 +132,23 @@
 						<ul class="nav__list nav__list--sub" data-menu="history">
 							<li class="nav__item nav__item--return"></li>
 						</ul>
+						<!-- Export -->
+						<li class="nav__item nav__item--parent" data-for="export">
+							<i class="fa-solid fa-file-export"></i> Export
+						</li>
+						<ul class="nav__list nav__list--sub" data-menu="export">
+							<li class="nav__item nav__item--return"></li>
+							<li class="nav__item nav__item--code">
+								<pre><code class="language-js" id="exportJSON" data-manual></code></pre>
+							</li>
+							<li class="nav__item nav__item--button" id="exportRefreshPreview">
+								<i class="fa-solid fa-refresh"></i> Update preview
+							</li>
+							<li class="nav__item nav__item--divider">Export</li>
+							<li class="nav__item nav__item--button" id="exportDownloadBtn">
+								<i class="fa-solid fa-download"></i> Download Block
+							</li>
+						</ul>
 						<!-- Field Properties -->
 						<li class="nav__item nav__item--divider" id="fieldSettingsId">
 							N/A
@@ -131,8 +156,6 @@
 						<form class="toolbar__field-settings" id="fieldSettings"></form>
 					</ul>
 				</nav>
-
-				<button class="button" id="saveBtn">Save</button>
 			</div>
 			<div class="editor">
 				<div class="editor__details">

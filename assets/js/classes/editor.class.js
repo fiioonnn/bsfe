@@ -2,6 +2,7 @@ import Fields from "./fields.class.js";
 import Settings from "../modules/settings.js";
 import Toolbar from "./toolbar.class.js";
 import FieldSettings from "./fieldSettings.class.js";
+import Conditions from "./conditions.class.js";
 
 class Editor {
 	constructor() {
@@ -28,6 +29,11 @@ class Editor {
 	add(fieldType, parentId = null) {
 		const field = Fields.add(fieldType, parentId);
 		const fieldElement = this.createField(field);
+
+		console.log(Settings.get("expandedByDefault"));
+		if (Settings.get("expandByDefault")) {
+			this.expandField(fieldElement);
+		}
 
 		if (parentId) {
 			const parentElement = document.querySelector(`#${parentId}`);
@@ -89,6 +95,7 @@ class Editor {
 				} else {
 					this.expandField(fieldElement);
 				}
+
 				this.selectField(fieldElement);
 			}
 
@@ -187,11 +194,12 @@ class Editor {
 	 * @returns {void}
 	 */
 	expandField(fieldElement) {
-		const icon = fieldElement.querySelector("button .fa-eye");
-		if (!icon) return;
-		fieldElement.classList.add("field--expanded");
-		icon.classList.add("fa-eye-slash");
+		const icon = fieldElement.querySelector(`button[data-id="toggle"] > i`); //!BUG
+
 		icon.classList.remove("fa-eye");
+		icon.classList.add("fa-eye-slash");
+
+		fieldElement.classList.add("field--expanded");
 	}
 
 	/**
@@ -200,11 +208,12 @@ class Editor {
 	 * @returns {void}
 	 */
 	collapseField(fieldElement) {
-		const icon = fieldElement.querySelector("button .fa-eye-slash");
-		if (!icon) return;
-		fieldElement.classList.remove("field--expanded");
-		icon.classList.remove("fa-eye-slash");
+		const icon = fieldElement.querySelector(`button[data-id="toggle"] > i`); //!BUG
+
 		icon.classList.add("fa-eye");
+		icon.classList.remove("fa-eye-slash");
+
+		fieldElement.classList.remove("field--expanded");
 	}
 
 	/**
@@ -217,6 +226,7 @@ class Editor {
 
 		fieldElement.id = field.fieldId;
 		fieldElement.classList.add("field");
+
 		fieldElement.innerHTML = `
 			<div class="field__head">
 				<p class="field__type">

@@ -1,0 +1,70 @@
+.popup {
+	max-width: 1000px;
+	width: 95%;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	translate: -50% -50%;
+	z-index: 777;
+	box-shadow: 0 0 0 100vmax rgba(#000, 0.7);
+	&__inner {
+		background: #333;
+	}
+	&__head {
+		display: flex;
+		background: #444;
+		align-items: center;
+		gap: 10px;
+		padding: 20px;
+	}
+	&__icon {
+		color: $color_primary;
+		display: none;
+	}
+	&__title {
+		font-weight: 700;
+		color: #fff;
+	}
+	&__body {
+	}
+	&__text {
+		padding: 30px 20px;
+		p {
+			color: #ccc;
+			line-height: 1.5;
+			padding-bottom: 5px;
+			b {
+				color: #fff;
+				font-weight: 700;
+				display: block;
+				margin-bottom: 5px;
+				margin-top: 20px;
+			}
+			a {
+				text-decoration: underline;
+			}
+			span {
+				color: $color_primary;
+			}
+			u {
+				&.red {
+					text-decoration-color: $color_red;
+				}
+			}
+		}
+	}
+	&__button {
+		display: flex;
+		justify-content: center;
+
+		padding: 20px;
+		padding-top: 0;
+		button {
+			padding: 10px;
+			width: 100%;
+		}
+	}
+}

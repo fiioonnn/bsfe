@@ -7,10 +7,13 @@
 	align-items: center;
 	gap: 20px;
 	background: #111111;
-	z-index: 100;
+	z-index: 888;
 	opacity: 0;
 	transition: 0.3s all ease;
 	pointer-events: none;
+	text-align: center;
+	line-height: 1.5;
+	padding: 20px;
 	img {
 		max-width: 50px;
 		animation: breathe 1.5s ease-in-out infinite alternate;

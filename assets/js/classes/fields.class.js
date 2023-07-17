@@ -1,54 +1,9 @@
 class Fields {
 	constructor() {
-		this.types = {
-			select: {
-				id: "string",
-				label: "string",
-				options: [],
-			},
-			selectOption: {
-				value: "string",
-				label: "string",
-			},
-			token: {
-				id: "string",
-				label: "string",
-				maxLength: "number",
-				placeholder: "string",
-				returnFormat: ["value", "label", "both"],
-				options: [],
-			},
-			tokenOption: {
-				value: "string",
-			},
-			files: {
-				id: "string",
-				label: "string",
-				multiple: "boolean",
-				default: "number",
-			},
-		};
+		this.types = {};
 		this.fields = [];
 		this.cache = {};
-		this.icons = {
-			text: "fa-solid fa-font",
-			group: "fa-solid fa-object-group",
-			gradient: "fa-solid fa-fill",
-			wysiwyg: "fa-solid fa-edit",
-			repeater: "fa-solid fa-repeat",
-			select: "fa-solid fa-bars",
-			selectOption: "fa-solid fa-list",
-		};
-
-		this.init();
-	}
-
-	/**
-	 * Initialize the Fields Class
-	 * @returns {void}
-	 */
-	init() {
-		this.initCache();
+		this.icons = {};
 	}
 
 	/**
@@ -78,7 +33,14 @@ class Fields {
 		const fieldId = this.generateID(type);
 
 		field.fieldId = fieldId;
+		!type.includes("Option") && (field.id = fieldId);
 		field.type = type;
+		field.switch && (field.switch = true);
+
+		field.help && (field.help = "Lorem ipsum dolor sit amet.");
+		field.title && (field.title = "Lorem ipsum dolor.");
+		field.label && (field.label = "Label text.");
+		field.name && (field.name = fieldId);
 
 		this.cache[type].push(fieldId);
 
@@ -423,7 +385,17 @@ class Fields {
 		}
 
 		for (let prop in field) {
-			if (prop === "fieldId" || prop === "type") continue;
+			if (
+				prop === "fieldId" ||
+				prop === "type" ||
+				prop === "id" ||
+				prop === "help" ||
+				prop === "title" ||
+				prop === "label" ||
+				prop === "switch" ||
+				prop === "name"
+			)
+				continue;
 
 			if (field[prop] === "string") {
 				field[prop] = "";
@@ -441,10 +413,14 @@ class Fields {
 			}
 
 			if (Array.isArray(field[prop])) {
+				if (prop === "returnFormat") {
+					field[prop] = field[prop][0];
+					return;
+				}
+
 				if (field[prop][0]) {
 					field[prop] = [field[prop][0]];
 				}
-				// // field[prop] = [];
 
 				continue;
 			}
