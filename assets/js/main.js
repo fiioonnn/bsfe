@@ -22,7 +22,7 @@ Loader.set({
 //
 // Initialize BSFE
 //
-fetch("assets/js/data/fields.json")
+fetch("/bsfe/assets/js/data/fields.json")
 	.then((res) => {
 		return res.json();
 	})
