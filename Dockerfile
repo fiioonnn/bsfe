@@ -1,8 +1,5 @@
 FROM nginx:alpine
 
-# Copy custom nginx configuration
-COPY nginx.conf /etc/nginx/nginx.conf
-
 # Copy the static files to the nginx html directory
 COPY . /usr/share/nginx/html
 
